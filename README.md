@@ -1,4 +1,21 @@
 # Crypto-Portfolio-App-Python
+Update 1.2
+
+- Bugs Fixes
+- Performance Improvements
+- Bot Now displays data more quickly
+- Added user based command restriction
+- Now only administrators can access portfolio worth (!worth)
+- Restricted bot to only be used in Cryptosurge #trading channel and not anywhere else (DM or any other server/channel)
+
+
+Update 1.1
+
+- Bugs Fixes
+- Added keepalive function which keeps the bot running even after crash
+- Removed timely Automatic portfolio update
+- Added Realtime portfolio update when users asks for it
+- Added seperate command to check Portfolio Worth
 
 ![App View](https://i.imgur.com/S4UHrq5.png)
 ![App View](https://i.imgur.com/tLW7Kj4.png)
