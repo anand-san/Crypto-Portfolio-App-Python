@@ -43,6 +43,6 @@ Client.py Credits goes to python-binance developer
 
 # Commands
 !port - Displays Portfolio
-
+!worth - Displays Portfolio worth ( USD )
 !Dominance - Displays Btc Dominance
 
