@@ -1,4 +1,11 @@
 # Crypto-Portfolio-App-Python
+Update 1.3
+
+- Performance Improvemnts
+- Added 24 hour and 7 Day portfolio change
+- !port now displays portfolio change in %
+- !worth now also displays Portfolio change in $
+
 Update 1.2
 
 - Bugs Fixes
