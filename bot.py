@@ -70,7 +70,8 @@ async def on_message(message):
 			await client.send_message(message.channel, "%s"%myid)			
 	elif message.content.startswith('!worth'):
 		myid = '<@'+message.author.id+'>'
-		if(str(message.author.id)=="342167127353982986") or (str(message.author.id)=="339118959892758529"):
+		#Get discord USER ID and put it here
+		if(str(message.author.id)=="Admin ID 1") or (str(message.author.id)=="Admin ID 2"):
 			total = float(start_finex.total[0])+float(start_loop.total[0])
 			if total < 455000:
 				change=455000-total 
