@@ -19,6 +19,30 @@ client = Bot(command_prefix=BOT_PREFIX)
 start_loop()
 start_finex()
 
+def change24h():
+	f = open("24hchange.txt", "r")
+	change24h.out=float(f.read())
+	f.close()
+	os.remove("24hchange.txt")
+	c24=float(start_finex.total[0])+float(start_loop.total[0])	
+	f = open("24hchange.txt", "w")
+	f.write(str(c24))
+def change7d():
+	f = open("7dchange.txt", "r")
+	change7d.out=float(f.read())
+	f.close()
+	os.remove("7dchange.txt")
+	c7d=float(start_finex.total[0])+float(start_loop.total[0])
+	f = open("7dchange.txt", "w")
+	f.write(str(c7d))
+def hour24():
+	threading.Timer(86400.0, hour24).start()
+	change24h()
+def day7():
+	threading.Timer(604800.0, day7).start()
+	change7d()
+hour24()
+day7()
 
 @client.event
 async def on_message(message):
